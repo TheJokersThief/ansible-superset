@@ -10,9 +10,10 @@ superset_additional_options: --with-threads
 superset_create_admin_user: true
 superset_run_db_upgrades: true
 superset_run_init: true
+superset_install_python: true
 
 # the python executable to install superset using
-superset_python_executable: "python3.6"
+superset_python_executable: "python3"
 
 # the application secret key
 superset_secret_key: REPLACE\2\1thisismyscretkey\1\2\e\y\y\h
