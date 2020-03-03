@@ -16,9 +16,6 @@
 - include_tasks: "install-{{ superset_python_executable }}.yml"
   when: superset_install_python
 
-- name: Wait for apt lock
-  shell: "while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1 ; do sleep 1; done"
-
 - name: Ensure dependencies are installed
   apt:
     pkg: "{{ superset_apt_dependencies_packages }}"
