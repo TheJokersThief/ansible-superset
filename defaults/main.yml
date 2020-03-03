@@ -13,7 +13,7 @@ superset_run_init: true
 superset_install_python: true
 
 # the python executable to install superset using
-superset_python_executable: "python3"
+superset_python_executable: "python3.6"
 
 # the application secret key
 superset_secret_key: REPLACE\2\1thisismyscretkey\1\2\e\y\y\h
